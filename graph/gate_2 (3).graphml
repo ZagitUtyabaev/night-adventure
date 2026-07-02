@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns">
+  <data key="gFormat">Cyberiada-GraphML-1.0</data>
+  <graph id="gMain" edgedefault="directed">
+    <data key="dStateMachine" />
+    <data key="dName">gate_2</data>
+    <node id="coreMeta">
+      <data key="dNote">formal</data>
+      <data key="dName">CGML_META</data>
+      <data key="dData">standardVersion/ 1.0
+
+platform/ Cyberiada Graph Editor
+
+platformVersion/ 1.1.0
+</data>
+    </node>
+    <node id="0163ef7b-02aa-48e5-8f83-d8373afc8a79">
+      <data key="dName">Ожидание</data>
+      <data key="dGeometry">
+        <point x="315.149628" y="251.804245" />
+      </data>
+      <data key="dData">entry/
+МодульИндикации.УстановитьЦветИндикатора(Красный)
+МодульИндикации.ВключитьИндикатор()
+МодульОбнаружения.ВзаимодействиеИгрокаСОбъектом(gate_2, 5)
+МодульПовествования.СледитьЗаПеременной(has_key )
+</data>
+    </node>
+    <node id="initial">
+      <data key="dVertex">initial</data>
+      <data key="dName">INIT</data>
+      <data key="dGeometry">
+        <point x="-285.909149" y="280.24234" />
+      </data>
+    </node>
+    <node id="91744437-00e0-4c7f-aca3-7d9424b0f260">
+      <data key="dName">Открыто</data>
+      <data key="dGeometry">
+        <point x="1215.51514" y="-193.029144" />
+      </data>
+      <data key="dData">entry/
+МодульВзаимодействия.УстановитьПроходимость(True)
+МодульИндикации.УстановитьЦветИндикатора(Зеленый)
+МодульИндикации.ВключитьИндикатор()
+</data>
+    </node>
+    <node id="25e0639f-744c-422a-9d31-6cffd3dc7482">
+      <data key="dName">Закрыто</data>
+      <data key="dGeometry">
+        <point x="323.6177" y="-204.107361" />
+      </data>
+      <data key="dData">entry/
+МодульОбнаружения.ВзаимодействиеИгрокаСОбъектом(gate_2, 5)
+МодульПовествования.ПерейтиКУзлу(gate)
+Таймер.ТаймерЗапуск(3)
+</data>
+    </node>
+    <node id="5a0bdeb7-9c3c-4dab-adda-a4fca08c9840">
+      <data key="dName">Диспетчер</data>
+      <data key="dGeometry">
+        <point x="1157.02039" y="254.5004" />
+      </data>
+      <data key="dData">entry/
+МодульОбнаружения.ВзаимодействиеИгрокаСОбъектом(gate_2, 5)
+</data>
+    </node>
+    <edge id="e198d82e-3d5c-4fda-9836-9533301e0448" source="initial" target="0163ef7b-02aa-48e5-8f83-d8373afc8a79">
+      <data key="dLabelGeometry">
+        <point x="0.006048029" y="0.0005340576" />
+      </data>
+    </edge>
+    <edge id="f65ba9d8-c771-4843-978c-50d311915a8e" source="0163ef7b-02aa-48e5-8f83-d8373afc8a79" target="25e0639f-744c-422a-9d31-6cffd3dc7482">
+      <data key="dLabelGeometry">
+        <point x="315.148132" y="13.8009586" />
+      </data>
+      <data key="dData">МодульОбнаружения.ВзаимодействиеИгрокаСОбъектом/
+</data>
+    </edge>
+    <edge id="725854d8-1477-4bae-b511-43dd82e3d508" source="0163ef7b-02aa-48e5-8f83-d8373afc8a79" target="5a0bdeb7-9c3c-4dab-adda-a4fca08c9840">
+      <data key="dLabelGeometry">
+        <point x="806.166931" y="251.804245" />
+      </data>
+      <data key="dData">МодульПовествования.ЗначениеПеременнойИзменилось/
+</data>
+    </edge>
+    <edge id="8516a377-d6dd-430b-80dd-1ccdfafe4389" source="25e0639f-744c-422a-9d31-6cffd3dc7482" target="0163ef7b-02aa-48e5-8f83-d8373afc8a79">
+      <data key="dLabelGeometry">
+        <point x="-167.357224" y="-204.107361" />
+      </data>
+      <data key="dData">Таймер.ТаймерВыполнен/
+</data>
+    </edge>
+    <edge id="d998fa43-7cfa-40c4-927c-f8145ea9e26d" source="5a0bdeb7-9c3c-4dab-adda-a4fca08c9840" target="91744437-00e0-4c7f-aca3-7d9424b0f260">
+      <data key="dLabelGeometry">
+        <point x="1130.82166" y="47.3270378" />
+      </data>
+      <data key="dData">МодульОбнаружения.ВзаимодействиеИгрокаСОбъектом/
+</data>
+    </edge>
+  </graph>
+</graphml>

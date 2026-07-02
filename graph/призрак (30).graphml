@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns">
+  <data key="gFormat">Cyberiada-GraphML-1.0</data>
+  <graph id="gMain" edgedefault="directed">
+    <data key="dStateMachine" />
+    <data key="dName">призрак</data>
+    <node id="coreMeta">
+      <data key="dNote">formal</data>
+      <data key="dName">CGML_META</data>
+      <data key="dData">standardVersion/ 1.0
+
+platform/ Cyberiada Graph Editor
+
+platformVersion/ 1.1.0
+</data>
+    </node>
+    <node id="bfe11a09-a46f-4af3-8d7c-2eb4599b2a95">
+      <data key="dName">первая встреча</data>
+      <data key="dGeometry">
+        <point x="1227.125" y="-100.349419" />
+      </data>
+      <data key="dData">entry/
+МодульПовествования.ПерейтиКУзлу(ghost)
+МодульПовествования.СледитьЗаПеременной(is_track)
+</data>
+    </node>
+    <node id="initial">
+      <data key="dVertex">initial</data>
+      <data key="dName">INIT</data>
+      <data key="dGeometry">
+        <point x="-520.1793" y="-78.26603" />
+      </data>
+    </node>
+    <node id="f7be02bf-29bf-4e49-838a-af4ac5dddf1b">
+      <data key="dName">продолжение</data>
+      <data key="dGeometry">
+        <point x="2661.76782" y="-146.305084" />
+      </data>
+      <data key="dData">entry/
+МодульОбнаружения.ПоискИгрокаВРадиусе(100)
+МодульДвижения.ДвигатьсяКОбъекту()
+</data>
+    </node>
+    <node id="20e4c7a3-1ee7-454a-b3d5-93dc10b22a8c">
+      <data key="dName">ждёт игрока</data>
+      <data key="dGeometry">
+        <point x="-26.91546" y="-251.276535" />
+      </data>
+      <data key="dData">entry/
+МодульОбнаружения.ПоискИгрокаВРадиусе(3)
+
+exit/
+МодульОбнаружения.ОстановкаПоиска()
+</data>
+    </node>
+    <edge id="b646f111-adec-472f-ba14-d4d29e4b2f5a" source="initial" target="20e4c7a3-1ee7-454a-b3d5-93dc10b22a8c">
+      <data key="dLabelGeometry">
+        <point x="0.0261579268" y="0.0128173837" />
+      </data>
+    </edge>
+    <edge id="17c66df9-109b-4b33-b795-3bbf90783e84" source="20e4c7a3-1ee7-454a-b3d5-93dc10b22a8c" target="bfe11a09-a46f-4af3-8d7c-2eb4599b2a95">
+      <data key="dLabelGeometry">
+        <point x="261.7017" y="-197.812912" />
+      </data>
+      <data key="dData">МодульОбнаружения.ИгрокОбнаружен/
+</data>
+    </edge>
+    <edge id="97efedf9-eb4a-4460-bbb7-3d28441bc2eb" source="bfe11a09-a46f-4af3-8d7c-2eb4599b2a95" target="f7be02bf-29bf-4e49-838a-af4ac5dddf1b">
+      <data key="dLabelGeometry">
+        <point x="1673.13464" y="-133.778" />
+      </data>
+      <data key="dData">МодульПовествования.ЗначениеПеременнойИзменилось/
+</data>
+    </edge>
+  </graph>
+</graphml>

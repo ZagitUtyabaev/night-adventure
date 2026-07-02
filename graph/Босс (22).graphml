@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns">
+  <data key="gFormat">Cyberiada-GraphML-1.0</data>
+  <graph id="gMain" edgedefault="directed">
+    <data key="dStateMachine" />
+    <data key="dName">Босс</data>
+    <node id="coreMeta">
+      <data key="dNote">formal</data>
+      <data key="dName">CGML_META</data>
+      <data key="dData">standardVersion/ 1.0
+
+platform/ Cyberiada Graph Editor
+
+platformVersion/ 1.1.0
+</data>
+    </node>
+    <node id="cd564d76-0346-4da8-939d-39020ca4fd61">
+      <data key="dName">потруль</data>
+      <data key="dGeometry">
+        <point x="-256.810181" y="11.7046824" />
+      </data>
+      <data key="dData">Таймер.Тик1Секунда/
+МодульОбнаружения.ВзаимодействиеИгрокаСОбъектом(monster, 6)
+
+entry/
+МодульИндикации.УстановитьЦветИндикатора(Зеленый)
+МодульИндикации.ВключитьИндикатор()
+МодульПовествования.СледитьЗаПеременной(has_weapon)
+МодульПовествования.УстановитьЗначениеИзПеременной(has_weapon, has_weapon)
+
+exit/
+МодульИндикации.ВыключитьИндикатор()
+
+Таймер.Тик/
+МодульОбнаружения.ПоискИгрокаВРадиусе(8)
+</data>
+      <graph id="dfcbc289-1f5d-41d8-92af-c61ac74e23b7" edgedefault="directed">
+        <node id="41912bec-b116-410d-b3e4-81648e35696b">
+          <data key="dName">первая п</data>
+          <data key="dGeometry">
+            <point x="-582.464966" y="255.252533" />
+          </data>
+          <data key="dData">entry/
+МодульДвижения.ЗадатьКоординатуВправо(3)
+МодульДвижения.ДвигатьсяПоКоординатам()
+
+exit/
+МодульДвижения.Стоп()
+МодульИндикации.ВыключитьИндикатор()
+</data>
+        </node>
+        <node id="30f3fa67-4891-4faa-9ecf-f2b3a5636a62">
+          <data key="dName">вторая п</data>
+          <data key="dGeometry">
+            <point x="582.464966" y="294.59613" />
+          </data>
+          <data key="dData">entry/
+МодульДвижения.СбросКоординат()
+МодульДвижения.ЗадатьКоординатуВниз(3)
+
+exit/
+МодульДвижения.СбросКоординат()
+МодульДвижения.Стоп()
+</data>
+        </node>
+        <node id="3d06f6c1-c375-4947-977d-9bc1842c3736">
+          <data key="dName">третья п</data>
+          <data key="dGeometry">
+            <point x="447.236877" y="-180.845154" />
+          </data>
+          <data key="dData">entry/
+МодульДвижения.СбросКоординат()
+МодульДвижения.ЗадатьКоординатуВлево(3)
+
+exit/
+МодульДвижения.СбросКоординат()
+МодульДвижения.Стоп()
+</data>
+        </node>
+        <node id="3f44cc01-50b5-4f7e-a57e-af81df799882">
+          <data key="dName">четвертая п</data>
+          <data key="dGeometry">
+            <point x="-580.1911" y="-267.5962" />
+          </data>
+          <data key="dData">entry/
+МодульДвижения.СбросКоординат()
+МодульДвижения.ЗадатьКоординатуВверх(3)
+
+exit/
+МодульДвижения.СбросКоординат()
+МодульДвижения.Стоп()
+</data>
+        </node>
+      </graph>
+    </node>
+    <node id="initial">
+      <data key="dVertex">initial</data>
+      <data key="dName">INIT</data>
+      <data key="dGeometry">
+        <point x="-1514.31775" y="61.0314331" />
+      </data>
+    </node>
+    <node id="61f1137f-6b5a-4642-9583-9c424577adc7">
+      <data key="dName">атака</data>
+      <data key="dGeometry">
+        <point x="1976.42847" y="-134.636688" />
+      </data>
+      <data key="dData">Таймер.Тик/
+МодульОбнаружения.ВзаимодействиеИгрокаСОбъектом(monster, 4)
+
+entry/
+МодульИндикации.УстановитьЦветИндикатора(Красный)
+МодульИндикации.ВключитьИндикатор()
+МодульПеременных.СледитьЗаПеременной(has_weapon)
+МодульОбнаружения.ПоискИгрокаВРадиусе(100)
+МодульПовествования.ПерейтиКУзлу(monster)
+
+exit/
+МодульИндикации.ВыключитьИндикатор()
+</data>
+      <graph id="497a700a-f9d7-4799-ae6f-7953f375c728" edgedefault="directed">
+        <node id="a85170b3-2ede-4004-8da8-ed3b28dc5990">
+          <data key="dName">приследование</data>
+          <data key="dGeometry">
+            <point x="-424.3108" y="3.99520874" />
+          </data>
+          <data key="dData">entry/
+МодульДвижения.ДвигатьсяКОбъекту()
+</data>
+        </node>
+        <node id="e125eb7a-4877-4874-88b6-eb3b26d37406">
+          <data key="dName">атака</data>
+          <data key="dGeometry">
+            <point x="424.310547" y="23.0047" />
+          </data>
+          <data key="dData">entry/
+МодульАтаки.АтаковатьЦель()
+</data>
+        </node>
+      </graph>
+    </node>
+    <node id="aec76713-79a4-4c47-b8fb-e65b9d496ed4">
+      <data key="dName">Смерть</data>
+      <data key="dGeometry">
+        <point x="1081.48035" y="-1358.44678" />
+      </data>
+      <data key="dData">entry/
+МодульПеременных.СледитьЗаПеременной(has_weapon)
+МодульПовествования.ПерейтиКУзлу(m_attack)
+МодульВзаимодействия.УничтожитьОбъект()
+</data>
+    </node>
+    <edge id="aa20c66f-77c5-4ad5-bff8-38390dd104f4" source="a85170b3-2ede-4004-8da8-ed3b28dc5990" target="e125eb7a-4877-4874-88b6-eb3b26d37406">
+      <data key="dLabelGeometry">
+        <point x="76.55054" y="-6.813263" />
+      </data>
+      <data key="dData">МодульДвижения.ПеремещениеВыполнено/
+</data>
+    </edge>
+    <edge id="f19397ee-5649-4775-a7e2-26280f28387d" source="41912bec-b116-410d-b3e4-81648e35696b" target="30f3fa67-4891-4faa-9ecf-f2b3a5636a62">
+      <data key="dLabelGeometry">
+        <point x="44.1424866" y="300.39563" />
+      </data>
+      <data key="dData">МодульДвижения.ПеремещениеВыполнено/
+</data>
+    </edge>
+    <edge id="589a649c-83a2-43b0-8e14-b4e6d5fc46ee" source="30f3fa67-4891-4faa-9ecf-f2b3a5636a62" target="3d06f6c1-c375-4947-977d-9bc1842c3736">
+      <data key="dLabelGeometry">
+        <point x="351.9216" y="51.0240326" />
+      </data>
+      <data key="dData">МодульДвижения.ПеремещениеВыполнено/
+</data>
+    </edge>
+    <edge id="0807b3e8-c886-4eb0-a114-30b4f63ffd7d" source="3d06f6c1-c375-4947-977d-9bc1842c3736" target="3f44cc01-50b5-4f7e-a57e-af81df799882">
+      <data key="dLabelGeometry">
+        <point x="37.16147" y="-180.852478" />
+      </data>
+      <data key="dData">МодульДвижения.ПеремещениеВыполнено/
+</data>
+    </edge>
+    <edge id="da8c0155-e0c4-484a-beb6-f70674ee5b30" source="3f44cc01-50b5-4f7e-a57e-af81df799882" target="41912bec-b116-410d-b3e4-81648e35696b">
+      <data key="dLabelGeometry">
+        <point x="-579.8754" y="21.9628143" />
+      </data>
+      <data key="dData">МодульДвижения.ПеремещениеВыполнено/
+</data>
+    </edge>
+    <edge id="b9c2a357-dd9c-443a-b7b9-b5493f39d40a" source="cd564d76-0346-4da8-939d-39020ca4fd61" target="a85170b3-2ede-4004-8da8-ed3b28dc5990">
+      <data key="dLabelGeometry">
+        <point x="995.8756" y="-351.604675" />
+      </data>
+      <data key="dData">МодульОбнаружения.ИгрокОбнаружен/
+</data>
+    </edge>
+    <edge id="c8039e93-eb75-42fc-b111-4b16e3e2f895" source="61f1137f-6b5a-4642-9583-9c424577adc7" target="41912bec-b116-410d-b3e4-81648e35696b">
+      <data key="dLabelGeometry">
+        <point x="1680.656" y="313.213928" />
+      </data>
+      <data key="dData">МодульОбнаружения.ИгрокНеОбнаружен/
+</data>
+    </edge>
+    <edge id="97e8247e-c3a5-4285-ae2d-704ed31405d9" source="initial" target="41912bec-b116-410d-b3e4-81648e35696b">
+      <data key="dLabelGeometry">
+        <point x="0.0225539412" y="0.0287155863" />
+      </data>
+    </edge>
+    <edge id="7b03e7cd-80c3-4694-9a23-0df813b9ff30" source="61f1137f-6b5a-4642-9583-9c424577adc7" target="aec76713-79a4-4c47-b8fb-e65b9d496ed4">
+      <data key="dLabelGeometry">
+        <point x="1834.13977" y="-769.31604" />
+      </data>
+      <data key="dData">МодульОбнаружения.ВзаимодействиеИгрокаСОбъектом/
+</data>
+    </edge>
+    <edge id="32d82062-a713-4c8f-b5f2-e4acd74907dd" source="cd564d76-0346-4da8-939d-39020ca4fd61" target="aec76713-79a4-4c47-b8fb-e65b9d496ed4">
+      <data key="dLabelGeometry">
+        <point x="212.747787" y="-926.424" />
+      </data>
+      <data key="dData">МодульОбнаружения.ВзаимодействиеИгрокаСОбъектом/
+</data>
+    </edge>
+  </graph>
+</graphml>
