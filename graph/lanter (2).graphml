@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns">
+  <data key="gFormat">Cyberiada-GraphML-1.0</data>
+  <graph id="gMain" edgedefault="directed">
+    <data key="dStateMachine" />
+    <data key="dName">lanter</data>
+    <node id="coreMeta">
+      <data key="dNote">formal</data>
+      <data key="dName">CGML_META</data>
+      <data key="dData">standardVersion/ 1.0
+
+platform/ Cyberiada Graph Editor
+
+platformVersion/ 1.1.0
+</data>
+    </node>
+    <node id="b0cc42d5-8806-4821-b764-9cae0cf0b375">
+      <data key="dName">Ожидание</data>
+      <data key="dGeometry">
+        <point x="-44.5714" y="180.45401" />
+      </data>
+      <data key="dData">entry/
+МодульОбнаружения.ВзаимодействиеИгрокаСОбъектом(lantern, 5)
+МодульПовествования.СледитьЗаПеременной(know_light)
+</data>
+    </node>
+    <node id="initial">
+      <data key="dVertex">initial</data>
+      <data key="dName">INIT</data>
+      <data key="dGeometry">
+        <point x="-542.002563" y="281.409119" />
+      </data>
+    </node>
+    <node id="cc6d0aff-f96c-437a-a057-5f9682496eae">
+      <data key="dName">Подбор ключа</data>
+      <data key="dGeometry">
+        <point x="972.849365" y="-240.316437" />
+      </data>
+      <data key="dData">entry/
+МодульВзаимодействия.УничтожитьОбъект()
+</data>
+    </node>
+    <node id="a6266876-4ced-46b0-9844-4246287aaecf">
+      <data key="dName">Отказ</data>
+      <data key="dGeometry">
+        <point x="-45.3055038" y="-246.22168" />
+      </data>
+      <data key="dData">entry/
+МодульПовествования.ПерейтиКУзлу(not_light)
+Таймер.ТаймерЗапуск(3)
+</data>
+    </node>
+    <node id="215cf14e-78d2-4baa-8b4c-b21fe803eea3">
+      <data key="dName">Можно подобрать ключ</data>
+      <data key="dGeometry">
+        <point x="987.6514" y="182.628723" />
+      </data>
+      <data key="dData">entry/
+МодульОбнаружения.ВзаимодействиеИгрокаСОбъектом(lantern, 5)
+</data>
+    </node>
+    <edge id="10e0a881-60fd-4680-bc23-8069b2a45d7d" source="initial" target="b0cc42d5-8806-4821-b764-9cae0cf0b375">
+      <data key="dLabelGeometry">
+        <point x="-0.0217866376" y="-0.00201104768" />
+      </data>
+    </edge>
+    <edge id="6e1f75bb-25c0-468d-9fca-73304a13170a" source="b0cc42d5-8806-4821-b764-9cae0cf0b375" target="215cf14e-78d2-4baa-8b4c-b21fe803eea3">
+      <data key="dLabelGeometry">
+        <point x="612.1211" y="173.988464" />
+      </data>
+      <data key="dData">МодульПовествования.ЗначениеПеременнойИзменилось/
+</data>
+    </edge>
+    <edge id="dc9ae580-4d81-4f5a-be93-379c66cb1f7d" source="a6266876-4ced-46b0-9844-4246287aaecf" target="b0cc42d5-8806-4821-b764-9cae0cf0b375">
+      <data key="dLabelGeometry">
+        <point x="-459.4631" y="-57.8884964" />
+      </data>
+      <data key="dData">Таймер.ТаймерВыполнен/
+</data>
+    </edge>
+    <edge id="4639f14a-221c-42b1-a262-1ce4015f06f6" source="215cf14e-78d2-4baa-8b4c-b21fe803eea3" target="cc6d0aff-f96c-437a-a057-5f9682496eae">
+      <data key="dLabelGeometry">
+        <point x="1055.21033" y="-46.7838" />
+      </data>
+      <data key="dData">МодульОбнаружения.ВзаимодействиеИгрокаСОбъектом/
+МодульПеременных.УстановитьЗначение(has_light, true)
+МодульПовествования.УстановитьЗначениеИзПеременной(has_light, has_light)
+
+</data>
+    </edge>
+    <edge id="61b7b9e5-5fea-45d4-ad1e-4b2716347298" source="b0cc42d5-8806-4821-b764-9cae0cf0b375" target="a6266876-4ced-46b0-9844-4246287aaecf">
+      <data key="dLabelGeometry">
+        <point x="32.3966942" y="-58.10178" />
+      </data>
+      <data key="dData">МодульОбнаружения.ВзаимодействиеИгрока/
+</data>
+    </edge>
+  </graph>
+</graphml>
