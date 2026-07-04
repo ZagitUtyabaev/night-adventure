@@ -5,7 +5,7 @@ VAR has_key = false
 VAR has_weapon = false
 VAR bad_end = false
 VAR is_track = false
-
+VAR know_light = false
 -> start
 
 ===start===
@@ -50,6 +50,7 @@ VAR is_track = false
 }
 
 ===before_g_2===
+~ know_light = true
 {has_light == false:
 	Привидение: О нет, там мухи. Они боятся света. Давай поищем чем можно их отогнать.
 	* [Ага! Понял.]
