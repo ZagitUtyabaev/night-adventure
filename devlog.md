@@ -99,3 +99,4 @@ https://games.kruzhok.org/play/constructor/2659?build=draft
 *   **Руководство по языку Ink** — для написания диалогов и сюжетных веток.
 *   **Blender 2.83** — для редактирования и создания 3D-моделей в формате GLB.
 *   **Библиотека 3D-моделей** ([sketchfab.com/feed](https://sketchfab.com/feed)) — внешний ресурс для поиска моделей.
+https://games.kruzhok.org/cyberiada-graphml/
