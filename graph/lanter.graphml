@@ -17,33 +17,34 @@ platformVersion/ 1.1.0
     <node id="b0cc42d5-8806-4821-b764-9cae0cf0b375">
       <data key="dName">Ожидание</data>
       <data key="dGeometry">
-        <point x="-44.5604134" y="180.452347" />
+        <point x="-44.58014" y="180.455383" />
       </data>
       <data key="dData">entry/
 МодульОбнаружения.ВзаимодействиеИгрокаСОбъектом(lantern, 5)
-МодульПеременных.СледитьЗаПеременной(know_light)
+МодульПовествования.СледитьЗаПеременной(know_light)
 </data>
     </node>
     <node id="initial">
       <data key="dVertex">initial</data>
       <data key="dName">INIT</data>
       <data key="dGeometry">
-        <point x="-541.986" y="281.407166" />
+        <point x="-542.0196" y="281.411163" />
       </data>
     </node>
     <node id="cc6d0aff-f96c-437a-a057-5f9682496eae">
       <data key="dName">Подбор ключа</data>
       <data key="dGeometry">
-        <point x="972.836" y="-240.316223" />
+        <point x="972.863159" y="-240.3169" />
       </data>
       <data key="dData">entry/
 МодульВзаимодействия.УничтожитьОбъект()
+МодульПовествования.ПерейтиКУзлу(light)
 </data>
     </node>
     <node id="a6266876-4ced-46b0-9844-4246287aaecf">
       <data key="dName">Отказ</data>
       <data key="dGeometry">
-        <point x="-45.2946663" y="-246.221619" />
+        <point x="-45.3145752" y="-246.221939" />
       </data>
       <data key="dData">entry/
 МодульПовествования.ПерейтиКУзлу(not_light)
@@ -53,7 +54,7 @@ platformVersion/ 1.1.0
     <node id="215cf14e-78d2-4baa-8b4c-b21fe803eea3">
       <data key="dName">Можно подобрать ключ</data>
       <data key="dGeometry">
-        <point x="987.638245" y="182.626892" />
+        <point x="987.6649" y="182.629913" />
       </data>
       <data key="dData">entry/
 МодульОбнаружения.ВзаимодействиеИгрокаСОбъектом(lantern, 5)
@@ -61,26 +62,26 @@ platformVersion/ 1.1.0
     </node>
     <edge id="10e0a881-60fd-4680-bc23-8069b2a45d7d" source="initial" target="b0cc42d5-8806-4821-b764-9cae0cf0b375">
       <data key="dLabelGeometry">
-        <point x="-0.0118001308" y="-0.00237358944" />
+        <point x="-0.0289917" y="-0.00152587891" />
       </data>
     </edge>
     <edge id="6e1f75bb-25c0-468d-9fca-73304a13170a" source="b0cc42d5-8806-4821-b764-9cae0cf0b375" target="215cf14e-78d2-4baa-8b4c-b21fe803eea3">
       <data key="dLabelGeometry">
-        <point x="612.115967" y="173.986633" />
+        <point x="514.9239" y="166.789825" />
       </data>
-      <data key="dData">МодульПеременных.ЗначениеПеременнойИзменилось/
+      <data key="dData">МодульПовествования.ЗначениеПеременнойИзменилось/
 </data>
     </edge>
     <edge id="dc9ae580-4d81-4f5a-be93-379c66cb1f7d" source="a6266876-4ced-46b0-9844-4246287aaecf" target="b0cc42d5-8806-4821-b764-9cae0cf0b375">
       <data key="dLabelGeometry">
-        <point x="-459.4494" y="-57.8889122" />
+        <point x="-459.4793" y="-57.88805" />
       </data>
       <data key="dData">Таймер.ТаймерВыполнен/
 </data>
     </edge>
     <edge id="4639f14a-221c-42b1-a262-1ce4015f06f6" source="215cf14e-78d2-4baa-8b4c-b21fe803eea3" target="cc6d0aff-f96c-437a-a057-5f9682496eae">
       <data key="dLabelGeometry">
-        <point x="1055.17334" y="-46.7841148" />
+        <point x="1055.21631" y="-46.78318" />
       </data>
       <data key="dData">МодульОбнаружения.ВзаимодействиеИгрокаСОбъектом/
 МодульПеременных.УстановитьЗначение(has_light, true)
@@ -90,7 +91,7 @@ platformVersion/ 1.1.0
     </edge>
     <edge id="61b7b9e5-5fea-45d4-ad1e-4b2716347298" source="b0cc42d5-8806-4821-b764-9cae0cf0b375" target="a6266876-4ced-46b0-9844-4246287aaecf">
       <data key="dLabelGeometry">
-        <point x="32.40543" y="-58.102108" />
+        <point x="32.390564" y="-58.1009636" />
       </data>
       <data key="dData">МодульОбнаружения.ВзаимодействиеИгрока/
 </data>
