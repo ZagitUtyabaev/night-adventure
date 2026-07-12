@@ -27,13 +27,9 @@ VAR know_light = false
 -> DONE
 
 ===not_light===
-{has_ghost == false:
-    Игра: Кто-то потерял фонарик... 
-    * [Пойду поищу, чей он?]
-    -> DONE
-- else:
-	-> DONE
-}
+Игра: Кто-то потерял фонарик... 
+* [пойти дальше по своим делам]
+-> DONE
 
 ===light===
 {know_light == true:
